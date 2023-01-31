@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form>
+    Name : <input type="text" id="name" name="name" /><br><br>
+    Month : <input type="text" id="month" name="month" /><br><br>
+    Year : <input type="text" id="year" name="year" /><br><br>
+    No. of units consumed : <input type="text" id="units" name="units" /><br><br>
+    Cost per unit : <input type="text" id="cost" name="cost" /><br><br>
+    <input type="button" value="Generate bill" onclick="generateBill()" />
+  </form>
+  <script type="text/javascript">
+    function generateBill() {
+      var name = document.getElementById("name").value;
+      var month = document.getElementById("month").value;
+      var year = document.getElementById("year").value;
+      var units = document.getElementById("units").value;
+      var cost = document.getElementById("cost").value;
+      var bill = units * cost;
+
+      document.write("<h2>Electricity Bill</h2>");
+      document.write("Name : " + name + "<br>");
+      document.write("Month : " + month + "<br>");
+      document.write("Year : " + year + "<br>");
+      document.write("No. of units consumed : " + units + "<br>");
+      document.write("Cost per unit : " + cost + "<br><br>");
+      document.write("Total Bill : " + bill);
+    }
+  </script>
+</body>
+</html>
