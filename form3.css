@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    /* align-items: center;  */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+img{
+    height: 450px;    
+}
+
