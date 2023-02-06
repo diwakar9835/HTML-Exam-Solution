@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function colorbg()
+        {
+            var x=document.getElementById("selectid");
+            var bgcolor=x.options[x.selectedIndex].value;
+            document.body.style.backgroundColor=bgcolor;
+        }
+    </script>
+    <style>
+        .pink{
+            background-color: pink;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1> Change background color using dropdown </h1>
+    <hr/>
+    <select id="selectid">
+        <option value="" selected disabled hidden> -- select color --</option>
+        <option class="pink">Pink</option>
+        <option class="red">Red </option>
+        <option class="green">Green</option>
+        <option class="blue">Blue</option>
+
+    </select>
+    <button onclick="colorbg()">Change the color</button>
+</center>
+</select>
+</body>
+</html>
